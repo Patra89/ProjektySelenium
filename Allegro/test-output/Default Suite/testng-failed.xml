@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Allegro(failed)">
+    <classes>
+      <class name="tests.mainPage.MojeAllegroTest">
+        <methods>
+          <include name="startOfMethod"/>
+          <include name="verifyHomePage"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="closeDriver"/>
+          <include name="setUp"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="testMojeAllegroOptionsPopUp"/>
+        </methods>
+      </class> <!-- MojeAllegroTest -->
+    </classes>
+  </test> <!-- Allegro(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

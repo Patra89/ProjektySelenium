@@ -1,0 +1,52 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteNum1">
+
+    <listeners>
+        <listener class-name="listeners.CustomListeners"/>
+    </listeners>
+
+    <test name="ProductDetailsFirefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="appUrl" value="https://allegro.pl/kategoria/telefony-i-akcesoria"/>
+        <classes>
+            <class name="tests.productDetailsPage.CartTest"/>
+            <class name="tests.productDetailsPage.BottomMenuTest"/>
+            <class name="tests.productDetailsPage.ProductAmountTest"/>
+            <class name="tests.productDetailsPage.LinksTest"/>
+        </classes>
+    </test>
+
+    <test name="ProductDetailsChrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="appUrl" value="https://allegro.pl/kategoria/telefony-i-akcesoria"/>
+        <classes>
+            <class name="tests.productDetailsPage.CartTest"/>
+            <class name="tests.productDetailsPage.BottomMenuTest"/>
+            <class name="tests.productDetailsPage.ProductAmountTest"/>
+            <class name="tests.productDetailsPage.LinksTest"/>
+        </classes>
+    </test>
+
+    <test name="MainFirefox" enabled="true">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="appUrl" value="https://www.allegro.pl"/>
+        <classes>
+            <class name="tests.mainPage.ScrollTest"/>
+            <class name="tests.mainPage.SideMenuTest"/>
+            <class name="tests.mainPage.MojeAllegroTest"/>
+            <class name="tests.mainPage.SearchBarTest"/>
+        </classes>
+    </test>
+
+    <test name="MainChrome" enabled="true">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="appUrl" value="https://www.allegro.pl"/>
+        <classes>
+            <class name="tests.mainPage.ScrollTest"/>
+            <class name="tests.mainPage.SideMenuTest"/>
+            <class name="tests.mainPage.MojeAllegroTest"/>
+            <class name="tests.mainPage.SearchBarTest"/>
+        </classes>
+    </test>
+
+</suite>
