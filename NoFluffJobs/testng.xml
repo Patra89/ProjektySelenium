@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteNum1">
+    <listeners>
+        <listener class-name="listeners.CustomListeners"/>
+    </listeners>
+    <test name="MainPageFirefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="appUrl" value="https://nofluffjobs.com/"/>
+        <classes>
+            <class name="tests.mainPage.MapSwitcherTest"/>
+            <class name="tests.mainPage.LanguageChangeTest"/>
+            <class name="tests.mainPage.SearchLimitersTest"/>
+            <class name="tests.mainPage.SearchBarTest"/>
+            <class name="tests.mainPage.JobSubscriptionTest"/>
+            <class name="tests.mainPage.LinksTest"/>
+        </classes>
+    </test>
+    <test name="JobDetailsPageFirefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="appUrl" value="https://nofluffjobs.com/"/>
+        <classes>
+            <class name="tests.jobDetailsPage.ApplyBoxTest"/>
+            <class name="tests.jobDetailsPage.CompareFunctionTest"/>
+            <class name="tests.jobDetailsPage.LinksTest"/>
+            <class name="tests.jobDetailsPage.ShareTest"/>
+        </classes>
+    </test>
+</suite>
